@@ -32,7 +32,6 @@ _<sup>1</sup> Shanghai Jiao Tong University,
 ## Contents
 
 - [Overview](#overview)
-- [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgments)
