@@ -49,11 +49,11 @@ Building upon these insights, we propose the Q-value regularized Transformer (QT
 When your environment is ready, you could run scripts in the "run.sh". For example:
 ``` Bash
 python experiment.py --seed 123 \
-    --env hopper --dataset medium --embed_dim 256 \
+    --env hopper --dataset medium   \
     --learning_rate 3e-4 --eta 1.0 --grad_norm 9.0 \
-    --exp_name qt --save_path ./save/ --batch_size 256 \
+    --exp_name qt --save_path ./save/    \
     --max_iters 500 --num_steps_per_iter 1000 --lr_decay \
-    --n_layer 4 --n_head 4  --early_stop --k_rewards --use_discount --discount 0.99 \
+    --early_stop --k_rewards --use_discount  \
 ```
 
 
