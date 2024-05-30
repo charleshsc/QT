@@ -50,7 +50,7 @@ When your environment is ready, you could run scripts in the "run.sh". For examp
 ``` Bash
 python experiment.py --seed 123 \
     --env hopper --dataset medium   \
-    --learning_rate 3e-4 --eta 1.0 --grad_norm 9.0 \
+    --eta 1.0 --grad_norm 9.0 \
     --exp_name qt --save_path ./save/    \
     --max_iters 500 --num_steps_per_iter 1000 --lr_decay \
     --early_stop --k_rewards --use_discount  \
