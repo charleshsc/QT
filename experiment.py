@@ -247,7 +247,10 @@ def experiment(
         s, a, r, d, rtg, timesteps, mask, target_a = [], [], [], [], [], [], [], []
         for i in range(batch_size):
             traj = trajectories[int(sorted_inds[batch_inds[i]])]
-            si = random.randint(0, traj['rewards'].shape[0] - 1) 
+            if 'hopper-medium' in gym_name:
+                si = random.randint(0, traj['rewards'].shape[0]-K-1) 
+            else:
+                si = random.randint(0, traj['rewards'].shape[0] - 1) 
 
             # get sequences from dataset
             s.append(traj['observations'][si:si + max_len].reshape(1, -1, state_dim))
